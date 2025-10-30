@@ -1,0 +1,15 @@
+org.mybatis
+org.postgresql
+org.springframework
+org.apache
+com.sun
+sun.reflect
+java.lang
+javax.servlet
+java.util.concurrent
+com.mchange
+com.atlassian
+io.atlassian
+de.javakaffee
+org.codehaus
+com.google

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ru.petshop.mapper.SettingMapper">
+    <resultMap id="settingResult" type="ru.petshop.domain.Setting">
+        <id property="name" column="crm_setting_name"/>
+        <result property="value" column="crm_setting_value"/>
+        <result property="valueString" column="crm_setting_value_string"/>
+    </resultMap>
+
+    <select id="selectByName" resultMap="settingResult">
+        SELECT *
+        FROM crm_setting
+        WHERE crm_setting_name = #{name}
+        LIMIT 1
+    </select>
+</mapper>
